@@ -15,7 +15,7 @@ class SettingsSeeder extends Seeder
     public function run()
     {
         $data = [
-            ['key' => 'app_name', 'value' => 'lara-pos'],
+            ['key' => 'app_name', 'value' => 'Stock Management'],
             ['key' => 'currency_symbol', 'value' => '$'],
         ];
 

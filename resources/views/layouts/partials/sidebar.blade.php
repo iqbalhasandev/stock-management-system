@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     <a href="{{route('home')}}" class="brand-link">
         <img src="{{ asset('images/logo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-             style="opacity: .8">
+            style="opacity: .8">
         <span class="brand-text font-weight-light">{{ config('app.name') }}</span>
     </a>
 
@@ -35,9 +35,15 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview">
+                    <a href="{{ route('products.index') }}" class="nav-link {{ activeSegment('products') }}">
+                        <i class="nav-icon fas fa-th-large"></i>
+                        <p>Product Stock</p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview">
                     <a href="{{ route('cart.index') }}" class="nav-link {{ activeSegment('cart') }}">
                         <i class="nav-icon fas fa-cart-plus"></i>
-                        <p>Open POS</p>
+                        <p>Create Order</p>
                     </a>
                 </li>
                 <li class="nav-item has-treeview">
